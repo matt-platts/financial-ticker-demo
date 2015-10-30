@@ -1,0 +1,62 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  background: #333;
+}
+
+#page-wrapper {
+  width: 600px;
+  background: #FFF;
+  padding: 1em;
+  margin: 1em auto;
+  min-height: 300px;
+  border-top: 5px solid #69c773;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+table thead tr th { 
+	text-align:left;
+	background-color:#f1f1f1;
+	min-width:70px;
+	padding:2px;
+}
+
+table tr td { border-bottom:1px #333 solid;}
+
+table tr td {
+	padding:5px;
+	margin:2px;
+	text-align:left;
+}
+
+
+/* Modern way of doing a flash */
+@-webkit-keyframes ui_flash {
+    0% {
+        background-color: Yellow;
+        opacity:1;
+    }
+    22% {
+        background-color: Yellow;
+    }
+    77% {
+        background-color: Yellow;
+    }
+    100% {
+        background-color: Blue;
+    }
+}
+
+tr td.changed{
+	background-color:orange;
+	transition: background-color 50ms;
+}
+
+tr td.reset {
+	background-color:#ffffff;
+	transition: background-color 300ms;
+}
+
