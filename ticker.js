@@ -101,6 +101,10 @@ var dataGrid = function(){
 		}
 	}
 
+	/*
+	 *  Function: uiFlash
+	 *  Causes a flash in the table cell in the ui when a value updates
+	*/
 	dataGrid.prototype.uiFlash = function (cell) {
 		cellClass = document.createAttribute("class");
 		cellClass.value="changed";
